@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax找抒壓</title>
+    <!-- 加入網頁標題前的icon -->
+    <link rel="icon" href="img/smLogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- 動畫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/common.js"></script>
+
+</head>
+
+<body>
+    <!-- 共同版面-nav開始 -->
+    <div class="nav">
+
+        <div class="navlogo">
+            <a href="home.html"><img src="img/logo4.png" alt=".."></a>
+        </div>
+
+        <div class="navtitle">
+
+            <div class="dropdown_nav">
+                <button class="dropbtn_nav">
+                    <span>紓壓好物</span>
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content_nav">
+                    <a href="product.html">全部商品</a>
+                    <a href="#">新品上架</a>
+                    <a href="#">熱門好物</a>
+                </div>
+            </div>
+
+            <div class="dropdown_nav">
+                <button class="dropbtn_nav">
+                    <span>舒活課程</span>
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content_nav">
+                    <a href="#">音樂治療</a>
+                    <a href="#">冥想放鬆</a>
+                    <a href="#">心靈雞湯</a>
+                </div>
+            </div>
+
+            <div class="dropdown_nav">
+                <button class="dropbtn_nav">
+                    <span>線上紓壓</span>
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content_nav">
+                    <a href="#">紓壓諮詢</a>
+                    <a href="#">預約紓壓</a>
+                </div>
+            </div>
+
+            <a href="test start.html">壓力測驗</a>
+            <a href="#">紓壓樂園</a>
+            <a href="discount.html">期間活動</a>
+
+        </div>
+
+        <div class="navicon">
+
+            <a href="#"><img src="img/搜尋.png" alt=""></a>
+
+            
+            <!-- 新增會員登入後的選項 -->
+            <div class="dropdown_nav" >
+                <button class="dropbtn_nav">
+                    <a href="sign in.html"><img src="img/會員.png" alt=""></a>
+                </button>
+                <!-- 下拉表單 -->
+                <!-- 沒登入時看不到display: none -->
+                <form class="dropdown-content_nav"  >
+                    <a href="#">訂單查詢</a>
+                    <a href="#">資料修改</a>
+                    <!-- <a href="#">登出</a> -->
+                    <input type="submit" value="登出"></input>
+                </form>
+            </div>
+
+
+            <!-- <a href="sign in.html"><img src="img/會員.png" alt=""></a> -->
+
+            <a href="sign in.html"><img src="img/購物車.png" alt=""></a>
+
+        </div>
+
+        <!-- 漢堡 -->
+        <div class="navhamberger">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+        </div>
+
+        <!-- 跟著漢堡出現的旁側選單 -->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="product.html">全部商品</a>
+            <a href="#">舒活課程</a>
+            <a href="#">線上紓壓</a>
+            <a href="test start.html">壓力測驗</a>
+            <a href="#">關於我們</a>
+            <a href="sign in.html">會員登入</a>
+        </div>
+
+
+
+    </div>
+    <!-- 共同版面-nav結束 -->
+
+    <!-- 網頁內容區 -->
+    <div class="container">
+
+        <!-- 現在位置 -->
+        <div class="where">
+            <i class="fa fa-home"></i>首頁
+        </div>
+
+
+        <!-- 首頁imgslide -->
+        <div class="slideshow-container">
+            <!-- 圖一 -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <!-- <img src="img/slider1.jpg"> -->
+                <img src="img/relax.png">
+                <a href="test start.html">
+
+                    <!-- 用套件的class啟用動畫效果 -->
+                    <div id="text" class="animate__animated animate__pulse animate__infinite	">
+                        <i class="fa fa-hand-o-right"></i> 測測你的壓力程度 <i class="fa fa-hand-o-left"></i></div>
+                </a>
+            </div>
+
+            <!-- 圖二 -->
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/slider2.png">
+
+            </div>
+
+            <!-- 圖三 -->
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/slider3.jpg.png">
+            </div>
+
+
+            <!-- 往左滑的按鍵 -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <!-- 往右滑的按鍵 -->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <!-- 下方的圓點按鈕 -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+        <!-- 首頁介紹圖文區 -->
+        <br>
+        <h2 class="h2home">【 好 物 推 薦 】</h2>
+        <p>生活壓力大，時常就覺得悶悶煩煩的嗎 ?<br>這時候有個紓壓小物在手邊，安定心神、舒緩緊繃的情緒<br>似乎又可以再努力一下下了 !
+        </p>
+        <br>
+
+        <!-- 紓壓商品四組圖放此 -->
+        <div class="product">
+
+            <a href="#" class="productcard_a">
+                <div class="productcard">
+                    <img src="img/product01.jpg" alt="">
+                    <p class="productname">紓壓方塊</p>
+                    <p class="productprice">NT$120</p>
+                    <p class="addtocart">加入購物車</p>
+                </div>
+            </a>
+
+            <a href="#" class="productcard_a">
+                <div class="productcard">
+                    <img src="img/product02.png" alt="">
+                    <p class="productname">人臉捏捏球</p>
+                    <p class="productprice">NT$380</p>
+                    <p class="addtocart">加入購物車</p>
+                </div>
+            </a>
+
+            <a href="#" class="productcard_a">
+                <div class="productcard">
+                    <img src="img/product03.png" alt="">
+                    <p class="productname">Ostrich Pillow鴕鳥枕</p>
+                    <p class="productprice">NT$660</p>
+                    <p class="addtocart">加入購物車</p>
+                </div>
+            </a>
+
+            <a href="#" class="productcard_a">
+                <div class="productcard">
+                    <img src="img/product04.png" alt="">
+                    <p class="productname">超大ENTER鍵</p>
+                    <p class="productprice">NT$580</p>
+                    <p class="addtocart">加入購物車</p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- 商品換頁區 -->
+        <div class="page">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#"><i class="fa fa-angle-right"></i></a>
+
+        </div>
+
+
+        <h2 class="h2home">【 線 上 舒 活 課 程 】</h2>
+        <p>人生最基本的追求不外乎健康、快樂<br>
+            健康指的是身體的健康，快樂指的是心理的健康，當身心都健康後<br>
+            我們才有能力再進一步去追求事業的成功與家庭的美滿。 <br>
+            快來體驗看看線上課程，好好放鬆吧！</p>
+            <br>
+
+
+        <!-- 舒活課程四組圖放此 -->
+        <div class="product">
+
+            <a href="#" class="productcard_a">
+                <div class="productcard">
+                    <img src="img/class01.png" alt="">
+                    <p class="productname">正向紓壓課程：心靈淨化</p>
+                    <p class="productprice">NT$1180</p>
+                    <p class="addtocart">線上報名</p>
+                </div>
+            </a>
+
+            <a href="#" class="productcard_a">
+                <div class="productcard">
+                    <img src="img/class02.png" alt="">
+                    <p class="productname">舒壓放鬆音樂：全集</p>
+                    <p class="productprice">NT$1280</p>
+                    <p class="addtocart">線上報名</p>
+                </div>
+            </a>
+
+            <a href="#" class="productcard_a">
+                <div class="productcard">
+                    <img src="img/class03.png" alt="">
+                    <p class="productname">心靈冥想課程：上</p>
+                    <p class="productprice">NT$1660</p>
+                    <p class="addtocart">線上報名</p>
+                </div>
+            </a>
+
+            <a href="#" class="productcard_a">
+                <div class="productcard">
+                    <img src="img/class04.png" alt="">
+                    <p class="productname">禪定瑜珈課程：初級</p>
+                    <p class="productprice">NT$2200</p>
+                    <p class="addtocart">線上報名</p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- 商品換頁區 -->
+        <div class="page">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#"><i class="fa fa-angle-right"></i></a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- 共同版面-網頁底部資訊欄(聯絡資訊) -->
+    <div class="footer1">
+        <div class="footer1left">
+            <p style="font-size: 20px; padding-bottom: 5px;">快速連結</p>
+            <a class="footer1text" href="#"> 會員中心</a><br>
+            <a class="footer1text" href="#"> 品牌故事</a><br>
+            <a class="footer1text" href="#"> 聯絡客服</a><br>
+            <a class="footer1text" href="#"> 問答Q&A</a><br>
+
+
+        </div>
+
+        <div class="footer1right">
+            <p style="font-size: 20px; padding-bottom: 5px;">聯繫我們</p>
+            <a class="footer1text" href="#"> 服務時間：週一至週五 10:00-18:30</a><br>
+            <a class="footer1text" href="#"> 客服專線：04 - 12341234</a><br>
+            <a class="footer1text" href="#"> E-mail：relax@gmail.com</a><br>
+            <a href="#"><img src="img/socialicon.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- 網頁底部資訊欄(公司copyright) -->
+    <div class="footer2">
+        Copyright © 好放鬆紓壓網 All Rights Reserved. Designed by Relax.
+    </div>
+
+    <!-- 左下釘版圖片 -->
+    <div class="nomove01">
+        <a href="#"><img src="img/line.png" alt=""></a>
+    </div>
+
+    <div class="nomove02">
+        <a href="#"><img src="img/top2.png" alt=""></a>
+    </div>
+
+    <!-- JS區 -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
