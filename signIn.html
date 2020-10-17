@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/common.js"></script>
+    <!-- 自己頁的CSS -->
+    <link rel="stylesheet" href="css/sign in.css">
+</head>
+
+<body>
+    <!-- 共同版面-nav -->
+    <div class="nav">
+
+        <div class="navlogo">
+            <a href="home.html"><img src="img/logo4.png" alt=".."></a>
+        </div>
+
+        <div class="navtitle">
+
+            <div class="dropdown_nav">
+                <button class="dropbtn_nav">
+                    <span>紓壓好物</span>
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content_nav">
+                    <a href="product.html">全部商品</a>
+                    <a href="#">新品上架</a>
+                    <a href="#">熱門好物</a>
+                </div>
+            </div>
+
+            <div class="dropdown_nav">
+                <button class="dropbtn_nav">
+                    <span>舒活課程</span>
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content_nav">
+                    <a href="#">音樂治療</a>
+                    <a href="#">冥想放鬆</a>
+                    <a href="#">心靈雞湯</a>
+                </div>
+            </div>
+
+            <div class="dropdown_nav">
+                <button class="dropbtn_nav">
+                    <span>線上紓壓</span>
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content_nav">
+                    <a href="#">紓壓諮詢</a>
+                    <a href="#">預約紓壓</a>
+                </div>
+            </div>
+
+            <a href="test start.html">壓力測驗</a>
+            <a href="#">紓壓樂園</a>
+            <a href="discount.html">期間活動</a>
+
+        </div>
+
+        <div class="navicon">
+            <a href="#"><img src="img/搜尋.png" alt=""></a>
+            <a href="sign in.html"><img src="img/會員.png" alt=""></a>
+            <a href="sign in.html"><img src="img/購物車.png" alt=""></a>
+        </div>
+
+        <!-- 漢堡 -->
+        <div class="navhamberger">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+        </div>
+
+        <!-- 跟著漢堡出現的旁側選單 -->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="product.html">全部商品</a>
+            <a href="#">舒活課程</a>
+            <a href="#">線上紓壓</a>
+            <a href="#">壓力測驗</a>
+            <a href="#">關於我們</a>
+            <a href="sign in.html">會員登入</a>
+        </div>
+
+    </div>
+    <!-- 共同版面-nav結束 -->
+
+
+    <!-- 網頁內容區開始-版型一 -->
+    <div class="container">
+
+        <!-- 現在位置 -->
+        <div class="where">
+            <i class="fa fa-home"></i>首頁 > 會員登入
+        </div>
+
+        <img src="img/signin.png" alt="">
+
+        <div class="signInbox">
+            <div class="box">
+                <span>Sign in</span> 會員登入<br>
+             <input placeholder="Email Address / Account 會員帳號" type="text"><br>
+                <input placeholder="Password 會員密碼" type="password"><br>
+                <a href=""><p>忘記密碼</p></a>
+                <button>SIGN IN</button>
+            </div>
+            <div class="box">
+                <span>Register</span> 立即加入會員<br>
+                <input placeholder="Email Address 電子信箱" type="text"><br>
+                <input placeholder="Password 會員密碼（6至15碼英數字）" type="password"><br>
+                <input placeholder="Password 請再次輸入密碼" type="password"><br>
+                <button>SIGN UP</button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!-- 網頁內容區結束-版型一 -->
+
+    <!-- 網頁內容區開始-版型二 -->
+    <div class="container_product">
+
+    </div>
+    <!-- 網頁內容區結束-版型二 -->
+
+
+
+    <!-- 共同版面-網頁底部資訊欄(聯絡資訊) -->
+    <div class="footer1">
+        <div class="footer1left">
+            <p style="font-size: 20px; padding-bottom: 5px;">快速連結</p>
+            <a class="footer1text" href="#"> 會員中心</a><br>
+            <a class="footer1text" href="#"> 品牌故事</a><br>
+            <a class="footer1text" href="#"> 聯絡客服</a><br>
+            <a class="footer1text" href="#"> 問答Q&A</a><br>
+
+
+        </div>
+
+        <div class="footer1right">
+            <p style="font-size: 20px; padding-bottom: 5px;">聯繫我們</p>
+            <a class="footer1text" href="#"> 服務時間：週一至週五 10:00-18:30</a><br>
+            <a class="footer1text" href="#"> 客服專線：04 - 12341234</a><br>
+            <a class="footer1text" href="#"> E-mail：relax@gmail.com</a><br>
+            <a href="#"><img src="img/socialicon.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- 共同版面-網頁底部資訊欄(公司copyright) -->
+    <div class="footer2">
+        Copyright © 好放鬆紓壓網 All Rights Reserved. Designed by Relax.
+    </div>
+
+    <!-- 共同版面-左下釘版圖片 -->
+    <div class="nomove01">
+        <a href="#"><img src="img/line.png" alt=""></a>
+    </div>
+
+    <div class="nomove02">
+        <a href="#"><img src="img/top2.png" alt=""></a>
+    </div>
+
+
+</body>
+
+</html>
